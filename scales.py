@@ -1,0 +1,23 @@
+"""gui"""
+import tkinter as tk
+import majorscaleaudio as msa
+window=tk.Tk()
+window.title("!!notes!!")
+window.config(bg="#FFFFFF")
+window.geometry("1600x1600")
+gmaj=tk.PhotoImage(file="gmajor.png")
+g=tk.Button(window,image = gmaj, bd=0,command = msa.gscale)
+g.pack()
+a=tk.Button(window,text ="A major", command = msa.ascale)
+a.pack()
+f=tk.Button(window,text ="F major", command = msa.fscale)
+f.pack()
+c=tk.Button(window,text ="C major", command = msa.cscale)
+c.pack()
+d=tk.Button(window,text ="D major", command = msa.dscale)
+d.pack()
+e=tk.Button(window,text ="E major", command = msa.escale)
+e.pack()
+b=tk.Button(window,text ="B major", command = msa.bscale)
+b.pack()
+window.mainloop()
